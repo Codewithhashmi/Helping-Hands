@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Helping Hands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header + Navigation -->
+  <header>
+    <h1>Helping Hands</h1>
+    <p>Every Hand Counts. Every Life Matters.</p>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="mission">
+    <h2>Our Mission</h2>
+    <p>We connect kind sponsors with verified families in need of food, education, shelter, and emergency help.</p>
+  </section>
+
+  <!-- Campaigns Section -->
+  <section id="campaigns" class="cases">
+    <h2>People Who Need Your Help!</h2>
+    <div class="cases-list">
+      <div class="case-card">
+        <img src="images/fatima.jpg" alt="Fatima">
+        <h3>Fatima (Bihar)</h3>
+        <p>Needs: School fees and books</p>
+        <p>Amount Needed: ₹3,500</p>
+        <button onclick="sponsorNow('Fatima')">Sponsor Now</button>
+      </div>
+
+      <div class="case-card">
+        <img src="images/ali.jpg" alt="Ali">
+        <h3>Ali (Delhi)</h3>
+        <p>Needs: Medical Treatment</p>
+        <p>Amount Needed: ₹5,000</p>
+        <button onclick="sponsorNow('Ali')">Sponsor Now</button>
+      </div>
+
+      <div class="case-card">
+        <img src="images/rehan.jpg" alt="Rehan">
+        <h3>Rehan (Lucknow)</h3>
+        <p>Needs: Monthly Groceries</p>
+        <p>Amount Needed: ₹2,000</p>
+        <button onclick="sponsorNow('Rehan')">Sponsor Now</button>
+      </div>
+
+      <div class="case-card">
+        <img src="images/nazia.jpg" alt="Nazia">
+        <h3>Nazia (Kolkata)</h3>
+        <p>Needs: Shelter Support</p>
+        <p>Amount Needed: ₹4,500</p>
+        <button onclick="sponsorNow('Nazia')">Sponsor Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Helping Hands Foundation is a non-profit initiative focused on connecting kind-hearted donors with families in crisis. All cases are verified and supported by our trusted field volunteers.</p>
+  </section>
+
+  <!-- Contact / Apply Section -->
+  <section id="contact" class="contact">
+    <h2>Need Help? Apply Here</h2>
+    <form id="help-form">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="text" id="city" placeholder="City/Village" required />
+      <input type="text" id="need" placeholder="What do you need?" required />
+      <input type="number" id="amountNeeded" placeholder="Amount Needed" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Donate Section -->
+  <section class="donate">
+  <h2>Donate</h2>
+  <input type="number" id="amount" placeholder="Enter amount (₹)" />
+  <button onclick="openUPILink()">Donate via UPI</button>
+
+  <h3>OR Scan & Pay</h3>
+  <img src="images/QR.jpg" alt="UPI QR Code" style="max-width: 200px; border: 1px solid #ccc; border-radius: 8px;" />
+
+  <h3>Confirm Your Donation</h3>
+  <a href="https://wa.me/918292330628?text=Hello,%20I%20have%20donated%20via%20UPI.%20Here%20is%20my%20screenshot." target="_blank">
+    <button>Send Screenshot on WhatsApp</button>
+  </a>
+</section>
+
+<!-- Sponsors logo -->
+
+<section class="sponsors">
+  <h2>Our Trusted Partners</h2>
+  <div class="sponsor-logos">
+    <img src="images/sponsor1.png" alt="Sponsor 1" />
+    <img src="images/sponsor2.png" alt="Sponsor 2" />
+    <img src="images/sponsor3.png" alt="Sponsor 3" />
+    <img src="images/sponsor4.png" alt="Sponsor 4" />
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helping Hands Foundation | Built with ❤️ for Ummah</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
